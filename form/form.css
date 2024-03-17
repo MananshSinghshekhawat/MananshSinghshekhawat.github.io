@@ -1,0 +1,174 @@
+body{
+    text-align: center;
+    overflow: scroll;
+    font-family: helvetica;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        115deg,
+        rgba(51, 51, 184, 0.8),
+        rgba(103, 103, 177, 0.7)
+      ),
+      url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+      
+      letter-spacing: 2px;
+    }
+.body{
+    width: 580px;
+    padding: 20px;
+    padding-left: 30px;
+    margin: auto;
+    background-color: rgba(0,0,0,0.6);
+    text-align: left;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    
+}
+
+ .head {
+     color: white;
+     font-size: 40px;
+     font-style: oblique;
+ }
+ .description {
+     color: white;
+     font-size: 20px;
+     font-style: italic;
+     letter-spacing: 2px;
+ }
+ .name {
+     margin-bottom: 5px;
+ }
+.inputbox {
+    width: 560px;
+    padding-left: 15px;
+    border-radius: 7px;
+    height: 45;
+    font-size: inherit;
+    margin-bottom: 15px;
+}
+.textbox {
+    width: 560px;
+    height: 150px;
+    height: 150;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: inherit;
+}
+.feature {
+    width: 560px;
+    padding: 15px;
+    border-radius: 7px;
+    height: 45;
+    font-size: inherit;
+}
+.feedback {
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+}
+.lable {
+    margin-bottom: 1rem;
+}
+
+.submit-button{
+    width: 575px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 1px;
+    border: none;
+    margin-top: 3%;
+    color: white;
+    background-color: rgb(19, 143, 19);}
+    input [type=text] { 
+        font-size: larger;
+    }
+    .clue {
+        color: #e4e4e4;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    /* Customise radio button */
+.custom-radio {
+display: block;
+width: 15px;
+height: 15px;
+border: 1px solid pink;
+border-radius: 100%;
+position: absolute;
+top: 3px;
+left: 5px;
+background-color: white;
+} 
+
+input:checked ~ .custom-radio::before {
+content: "";
+display: block;
+width: 11px;
+height: 11px;
+background-color: purple;
+border-radius: 100%;
+position: absolute;
+top: 2px;
+left: 2px;
+}
+.custom-box {
+position: relative;
+}
+/* custom-checkbox */
+.custom-container {
+display: flex;
+}
+.custom-checkbox {
+width: 15px;
+height: 15px;
+border: 2px solid red;
+border-radius: 10%;
+position: absolute;
+top: 3px;
+left: 4px; 
+background: white;
+display: block;
+}
+input:checked ~ .custom-checkbox {
+border: 2px solid indigo;
+display: block;
+position: absolute;
+top: 4px;
+left: 3px;
+background-color: white;
+}
+input:checked ~ .custom-checkbox::after{
+content: "*";
+width: 23px;
+height: 10px;
+color: black;
+position: relative;
+top: -7px;
+left: 1px;
+font-size: 28px;
+}
+.tickmark {
+position: relative;
+}
+    @media (max-width:600px){
+        body{
+            width: 90%;
+        }
+        .body{
+            width: 90%;
+        }
+        .inputbox {
+            width: 100%;
+        }
+        .textbox {
+            width: 100%;
+        }
+        .feature {
+            width: 100%;
+        }
+        .submit-button {
+            width: 100%;
+        }
+    }
